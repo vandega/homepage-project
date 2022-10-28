@@ -167,20 +167,166 @@ header{
 
 /*----------------------------------[      MAIN grid gallery      ]----------------------------------*/
 
-.grid__parent div{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+/*----------------------------{   for all elemetns in grid are same   }------------------------------*/
+.grid p, h4, h5{
+    position: absolute;
 }
 
-.grid__parent{
+.grid{
+    position: relative;
+}
+
+.grid p{
+    display: flex;
+    top: 24px;
+    left: 24px;
+    font-family: inter;
+    width: 42px;
+    height: 24px;
+    background: #FFFFFF;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    transition: all 0.2s ease 0s;
+
+}
+
+.grid p:hover{
+    transition: all 0.2s ease 0s;
+    color: white;
+    background-color: #2D3134;
+}
+
+
+
+.grid:hover{
+    transition: all 0.2s ease 0s;
+    background: linear-gradient(0deg, rgba(18, 18, 16, 0.9) 0%, rgba(44, 44, 43, 0) 38.72%);
+    border-radius: 20px;
+    
+}
+
+.grid h4{
+    bottom: 48px;
+    left: 24px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.grid h5{
+    bottom: 24px;
+    left: 24px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.img_1{
+    grid-area: one;
+}
+
+.img_2{
+    grid-area: two;
+}
+
+.img_3{
+    grid-area: three;
+}
+
+.img_4{
+    grid-area: four;
+}
+
+.img_5{
+    grid-area: five;
+}
+
+.img_6{
+    grid-area: six;
+}
+
+.boss_parent{
+    width: 1170;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
     "one three three four four"
     "two three three five six";
+    justify-content: center;
+    align-items: end;
+    row-gap: 10px;
     column-gap: 30px;
-    row-gap: 26px;
 }
 
+/*=============================================[     FOOTER     ]=======================================================*/
+
+
+footer{
+    position: relative;
+    height: 315px;
+    padding-top: 80px;   
+}
+
+
+footer p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #5B5F62;
+}
+
+footer a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 34px;
+    color: #676A6C;
+}
+
+footer h6{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #2D3134;
+    padding-bottom: 22px;
+}
+
+.footer__logo{
+    margin-bottom: 20px;
+    padding-right: 318px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_a{
+    display:grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.footer_a a{
+    display:inline-flex;
+    flex-direction: row;
+}
+
+.footer__navigation{
+    display: flex;
+    flex-direction: row;
+    gap:100px;
+}

@@ -1,0 +1,90 @@
+html{
+    margin: 30px 135px;
+    width: 1440px;
+    height: 1243px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px 0px;
+    color: white;
+}
+
+.grid p, h4, h5{
+    position: absolute;
+}
+
+.grid{
+    position: relative;
+    
+}
+
+.grid p{
+    display: flex;
+    top: 24px;
+    left: 24px;
+    width: 42px;
+    height: 24px;
+    background: #FFFFFF;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.grid h4{
+    bottom: 48px;
+    left: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.grid h5{
+    bottom: 24px;
+    left: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.img_1{
+    grid-area: one;
+}
+
+.img_2{
+    grid-area: two;
+}
+
+.img_3{
+    grid-area: three;
+}
+
+.img_4{
+    grid-area: four;
+}
+
+.img_5{
+    grid-area: five;
+}
+
+.img_6{
+    grid-area: six;
+}
+
+.boss_parent{
+    width: 1170;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "one one three three four four four"
+    "two two three three five six six";
+}
+
